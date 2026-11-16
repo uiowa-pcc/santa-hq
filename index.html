@@ -193,6 +193,75 @@ body.kid-open{background:#fff9f9}.kid-portal{background:#fffaf9!important;color:
 /* final detail polish */
 .morning-mini-metrics div{background:#fff4f3;color:#997e83}.morning-summary.two .morning-mini-metrics div{background:#f1f5ef}.morning-mini-metrics b{color:#53434c}.morning-mini-metrics small{color:#927d84}.morning-summary-numbers strong{color:#3b323a;font-family:'Fraunces',Georgia,serif!important;font-weight:700!important}.plan-score-metrics span{background:#fff4f2;color:#937e85}.plan-score.two .plan-score-metrics span{background:#f0f5f1}.plan-score-metrics b{color:#543e48}.plan-score-price{font-family:'Fraunces',Georgia,serif!important;color:#3d3138}.kid-topic-head{color:#967c86}.kid-topic.active{box-shadow:0 3px 0 #ebc8ce}.kid-studio .kid-voice-alt button{color:#b02d47}.kid-draw-actions button{background:#fff0ee;color:#a34755}.kid-color.active{outline-color:#ba4357}.morning-status{color:#845b66}.plan-move{background:#faedf0;color:#a74454}.plan-grip{background:#f9e9e9;color:#ad6d7a}.morning-card-footer .plan-grip{background:#f6e7e8}.morning-move{background:#fff3f1;color:#a44b59}.morning-page.morning-compact .morning-moment{font-weight:800}.step-track{background:#f5edef}.stat-note{font-size:11px}.morning-page .morning-card-footer button:focus-visible,.kid-mode:focus-visible{outline:3px solid #bf5673}
 @media(max-width:760px){.hero.editorial-hero p{max-width:174px}.morning-mini-metrics b{font-size:15px}.morning-mini-metrics small{font-size:9px}.hero.editorial-hero .tiny{max-width:200px;display:inline-block}.kid-topics{gap:6px}}
+
+/* Santa HQ — Heart and star kid icons */
+
+/* Kid 1: blush pink heart */
+.kid-card:nth-child(1) .kid-avatar,
+.plan-score.one .plan-score-face,
+.morning-summary.one .morning-summary-name > span,
+.plan-child.one .plan-face,
+.morning-colhead.one .face,
+.kid-person[data-kid="1"] > span {
+  --kid-symbol: "♥";
+  --kid-color: #d56d90;
+  --kid-bg: #fce9ef;
+}
+
+/* Kid 2: soft rose star */
+.kid-card:nth-child(2) .kid-avatar,
+.plan-score.two .plan-score-face,
+.morning-summary.two .morning-summary-name > span,
+.plan-child.two .plan-face,
+.morning-colhead.two .face,
+.kid-person[data-kid="2"] > span {
+  --kid-symbol: "★";
+  --kid-color: #b77ba8;
+  --kid-bg: #f5e9f4;
+}
+
+/* Apply the new icons throughout the app */
+:is(
+  .kid-avatar,
+  .plan-score-face,
+  .morning-summary-name > span,
+  .plan-child-header .plan-face,
+  .morning-colhead .face,
+  .kid-person > span
+) {
+  display: grid;
+  place-items: center;
+  position: relative;
+  background: var(--kid-bg, #fce9ef) !important;
+  border-radius: 14px;
+}
+
+:is(
+  .kid-avatar,
+  .plan-score-face,
+  .morning-summary-name > span,
+  .plan-child-header .plan-face,
+  .morning-colhead .face,
+  .kid-person > span
+) > img {
+  display: none !important;
+}
+
+:is(
+  .kid-avatar,
+  .plan-score-face,
+  .morning-summary-name > span,
+  .plan-child-header .plan-face,
+  .morning-colhead .face,
+  .kid-person > span
+)::after {
+  content: var(--kid-symbol);
+  color: var(--kid-color);
+  font-family: Georgia, serif;
+  font-size: 28px;
+  line-height: 1;
+}
+
 </style>
 </head>
 <body>
