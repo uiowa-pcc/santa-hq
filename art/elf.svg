@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" fill="none" role="img">
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6A3944" flood-opacity=".12"/></filter></defs>
+
+<ellipse cx="120" cy="219" rx="74" ry="9" fill="#604D57" opacity=".08"/>
+<g filter="url(#shadow)"><path d="M81 153c-11 15-14 40-18 54h113c-4-29-13-48-24-54" fill="#27755E" stroke="#593B45" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/><path d="m114 159 9 11 9-11" fill="#F3BE67"/><path d="M63 190 43 206l26 5m105-21 21 16-21 5" stroke="#27755E" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="m68 104-24-14 12 40 18-7M171 104l25-14-13 40-18-7" fill="#F5CBB1" stroke="#593B45" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="120" cy="113" rx="53" ry="58" fill="#F5CBB1" stroke="#593B45" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M67 90C74 43 96 42 122 33c19-6 42-5 52 11l17 24-33 7c-11 8-25 12-41 12Z" fill="#27755E" stroke="#593B45" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M126 34 175 12l-3 34" fill="#27755E" stroke="#593B45" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="177" cy="15" r="12" fill="#F3BE67" stroke="#593B45" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M69 95c12-8 29-11 50-7 18 3 31-2 48-10" stroke="#F3A4A8" stroke-width="14" stroke-linecap="round"/>
+<circle cx="104" cy="115" r="4" fill="#593B45"/><circle cx="143" cy="115" r="4" fill="#593B45"/>
+<ellipse cx="94" cy="131" rx="7" ry="4" fill="#F3A4A8" opacity=".66"/><ellipse cx="151" cy="131" rx="7" ry="4" fill="#F3A4A8" opacity=".66"/>
+<path d="M109 144q13 13 26 0" stroke="#593B45" stroke-width="3" stroke-linecap="round"/>
+<path d="M95 173h50" stroke="#A7D4A9" stroke-width="6" stroke-linecap="round"/><circle cx="120" cy="190" r="7" fill="#F3BE67"/>
+</g><path d="M40 41.5 Q41.5 47.5 47.5 49 Q41.5 50.5 40 56.5 Q38.5 50.5 32.5 49 Q38.5 47.5 40 41.5Z" fill="#F3BE67"/><path d="M207 113.5 Q208.3 118.7 213.5 120 Q208.3 121.3 207 126.5 Q205.7 121.3 200.5 120 Q205.7 118.7 207 113.5Z" fill="#F6BBC2"/></svg>

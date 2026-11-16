@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" fill="none" role="img">
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6A3944" flood-opacity=".12"/></filter></defs>
+
+<ellipse cx="124" cy="209" rx="54" ry="8" fill="#604D57" opacity=".08"/>
+<g filter="url(#shadow)"><rect x="91" y="40" width="66" height="112" rx="33" fill="#F6BBC2" stroke="#593B45" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M110 64h30M110 77h30M110 90h30M110 103h30" stroke="#FFE7E9" stroke-width="5" stroke-linecap="round"/>
+<path d="M71 112v9c0 39 19 59 53 59s53-20 53-59v-9" fill="none" stroke="#27755E" stroke-width="11" stroke-linecap="round"/>
+<path d="M124 181v25m-35 0h70" stroke="#27755E" stroke-width="11" stroke-linecap="round"/>
+<circle cx="123" cy="45" r="6" fill="white" opacity=".75"/></g><path d="M47 68.0 Q48.6 74.4 55.0 76 Q48.6 77.6 47 84.0 Q45.4 77.6 39.0 76 Q45.4 74.4 47 68.0Z" fill="#F3BE67"/><path d="M199 119.0 Q200.4 124.6 206.0 126 Q200.4 127.4 199 133.0 Q197.6 127.4 192.0 126 Q197.6 124.6 199 119.0Z" fill="#F3A4A8"/></svg>

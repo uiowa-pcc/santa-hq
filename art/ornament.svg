@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" fill="none" role="img">
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6A3944" flood-opacity=".12"/></filter></defs>
+
+<ellipse cx="120" cy="215" rx="62" ry="10" fill="#604D57" opacity=".08"/>
+<path d="M120 21v44" stroke="#27755E" stroke-width="5" stroke-linecap="round"/><path d="M99 47V32c0-10 9-15 21-15 12 0 21 5 21 15v15" stroke="#F3BE67" stroke-width="4" stroke-linecap="round"/>
+<rect x="105" y="52" width="30" height="20" rx="5" fill="#F3BE67" stroke="#593B45" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="120" cy="141" r="73" fill="#C64759" stroke="#593B45" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" filter="url(#shadow)"/><path d="M74 101c13-19 38-26 53-23" stroke="#FFE4D9" opacity=".68" stroke-width="9" stroke-linecap="round"/>
+<path d="M55 141c42-17 81-17 131 0M66 171c35-19 75-21 110-3" stroke="#F9B6AD" stroke-width="6" fill="none" stroke-linecap="round"/>
+<path d="M117 128.0 Q120.0 140.0 132.0 143 Q120.0 146.0 117 158.0 Q114.0 146.0 102.0 143 Q114.0 140.0 117 128.0Z" fill="#F9D987"/><path d="M80 152.5 Q81.3 157.7 86.5 159 Q81.3 160.3 80 165.5 Q78.7 160.3 73.5 159 Q78.7 157.7 80 152.5Z" fill="#F9D987"/><path d="M159 160.0 Q160.2 164.8 165.0 166 Q160.2 167.2 159 172.0 Q157.8 167.2 153.0 166 Q157.8 164.8 159 160.0Z" fill="#F9D987"/><path d="M197 70.0 Q198.8 77.2 206.0 79 Q198.8 80.8 197 88.0 Q195.2 80.8 188.0 79 Q195.2 77.2 197 70.0Z" fill="#F6BBC2"/></svg>

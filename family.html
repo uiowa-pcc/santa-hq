@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#fae8e9">
+  <title>Santa HQ | A little Christmas magic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght,SOFT,WONK@9..144,600,30,1;9..144,700,30,1&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#40333b;--muted:#8b7984;--pink:#c22c46;--light:#f9e5e9;--line:#eedfe2;--cream:#fffdfb;--surface:#fff;--green:#42705a;--soft-green:#f1f6ef;--shadow:0 12px 34px rgba(123,58,73,.07)}
+    *{box-sizing:border-box}body{margin:0;background:linear-gradient(#fae9ea,#fff9f7 550px,#fffcfa);color:var(--ink);font:14px/1.5 'DM Sans',system-ui,sans-serif}button,input{font:inherit}button{cursor:pointer}button:disabled{cursor:default}a{color:var(--pink)}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #e3b370;outline-offset:3px}
+    .shell{max-width:1080px;margin:auto;padding:0 28px 65px}.top{height:83px;display:flex;align-items:center;justify-content:space-between;gap:15px}.brand{display:flex;align-items:center;gap:10px;font:700 22px Fraunces,Georgia,serif;letter-spacing:-.7px}.brand-icon{width:41px;height:41px;border-radius:13px;background:#fff;border:1px solid #efdee0;display:grid;place-items:center;position:relative}.brand-icon:before{content:'';width:19px;height:19px;border:2px solid #c94660;border-radius:3px;transform:rotate(-7deg)}.brand-icon:after{content:'';position:absolute;left:17px;top:10px;width:6px;height:20px;border-left:2px solid #c94660;border-right:2px solid #c94660;transform:rotate(-7deg)}.top-note{font-size:10px;letter-spacing:1.9px;font-weight:800;color:#a66c79;text-transform:uppercase}
+    .hero{background:linear-gradient(115deg,#fbf0ef,#f8dfe4);border:1px solid #eedbe0;border-radius:29px;min-height:254px;display:flex;justify-content:space-between;align-items:center;padding:40px 49px;gap:20px;position:relative;overflow:hidden}.hero-copy{z-index:2;max-width:650px}.eyebrow{font-size:10px;letter-spacing:2px;font-weight:800;color:#b15265;text-transform:uppercase}.hero h1{font:700 clamp(32px,5vw,51px)/1.08 Fraunces,Georgia,serif;letter-spacing:-1.8px;margin:12px 0 14px}.hero h1 em{color:var(--pink);font-style:normal}.hero p{color:#806d79;line-height:1.65;max-width:460px;margin:0;font-size:13px}.hero-art{flex:0 0 170px;height:183px;position:relative;z-index:1}.big-gift{position:absolute;right:18px;bottom:9px;width:135px;height:114px;border-radius:12px;background:#d06978;box-shadow:0 20px 23px #ad718122;transform:rotate(-8deg)}.big-gift:before{content:'';position:absolute;left:56px;top:0;bottom:0;width:22px;background:#fce3d5}.big-gift:after{content:'';position:absolute;left:-8px;right:-8px;top:20px;height:22px;background:#fce3d5;border-radius:4px}.bow{position:absolute;top:21px;right:73px;width:37px;height:23px;border:8px solid #fce3d5;border-radius:60% 60% 50% 60%;transform:rotate(-30deg)}.bow:after{content:'';position:absolute;left:27px;top:6px;width:37px;height:23px;border:8px solid #fce3d5;border-radius:60%;transform:rotate(55deg)}.sparkle{position:absolute;top:9px;right:22px;width:23px;height:23px;background:#d7ae6e;clip-path:polygon(50% 0,60% 38%,100% 50%,60% 62%,50% 100%,40% 62%,0 50%,40% 38%)}.sparkle.two{top:110px;right:162px;width:15px;height:15px}
+    .notice{margin:21px 0;background:#fffaf8;border:1px solid #f0dfe1;border-radius:13px;padding:12px 16px;font-size:12px;color:#86717d;display:flex;align-items:center;gap:10px}.notice .dot{width:7px;height:7px;border-radius:50%;background:#b95369;flex:none}.notice strong{color:#6a4d5b}.section{margin-top:38px}.section-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;margin-bottom:16px}.kicker{font-size:10px;font-weight:800;letter-spacing:1.7px;color:#bc6573;text-transform:uppercase}.section h2{font:700 26px Fraunces,Georgia,serif;letter-spacing:-.7px;margin:5px 0 5px}.section p.subtitle{color:var(--muted);font-size:12px;margin:0}.count{border:1px solid #e9d5da;border-radius:100px;padding:5px 10px;color:#996576;font-size:11px;font-weight:700;white-space:nowrap}
+    .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.info-card{background:#fff;border:1px solid #f0e2e2;border-radius:19px;padding:20px;box-shadow:var(--shadow);position:relative;overflow:hidden}.info-card:before{content:'';position:absolute;right:-26px;top:-26px;width:100px;height:100px;border:13px solid #fff4f2;border-radius:50%}.info-card h3{font:700 20px Fraunces,Georgia,serif;margin:0 0 12px;position:relative}.bag-item{display:flex;gap:10px;align-items:center;padding:7px 0;border-bottom:1px solid #f5eded;font-size:12px}.bag-item:last-child{border:0}.bag-check{width:20px;height:20px;border-radius:50%;background:#e9f2e9;position:relative;flex:none}.bag-check:after{content:'';position:absolute;border:solid #47725c;border-width:0 2px 2px 0;width:5px;height:8px;left:7px;top:4px;transform:rotate(45deg)}.no-items{font-size:12px;color:#a1939b;font-style:italic}.likes{display:flex;flex-wrap:wrap;gap:8px;position:relative}.like{display:inline-flex;align-items:center;border:1px solid #f0dce0;border-radius:100px;padding:8px 12px;background:#fff7f8;color:#875567;font-size:11px;font-weight:700}.info-card:nth-child(even) .like{background:#f2f5ef;border-color:#e2e8dc;color:#5e7761}
+    .ideas-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.idea-card{background:#fff;border:1px solid #ede1e1;border-radius:18px;display:flex;gap:14px;padding:15px;box-shadow:var(--shadow);align-items:center}.mini-gift{width:64px;height:68px;border-radius:12px;background:linear-gradient(140deg,#f8e6e8,#fbf1eb);flex:none;display:grid;place-items:center;overflow:hidden}.mini-gift img{height:100%;width:100%;object-fit:cover}.gift-symbol{width:31px;height:28px;background:#e1a1af;border-radius:5px;position:relative}.gift-symbol:before{content:'';position:absolute;left:12px;top:0;bottom:0;width:7px;background:#fdf5e8}.gift-symbol:after{content:'';position:absolute;top:11px;left:0;right:0;height:6px;background:#fdf5e8}.idea-main{flex:1;min-width:0}.idea-main strong{display:block;font-size:13px;overflow-wrap:anywhere}.idea-main small{display:block;color:var(--muted);font-size:11px;margin:5px 0 10px}.idea-main a{font-size:11px;font-weight:800;text-decoration:none;white-space:nowrap}.claim-btn{border:0;background:#c82e48;color:white;padding:9px 12px;border-radius:100px;font-size:11px;font-weight:800;white-space:nowrap;transition:background .15s}.claim-btn:hover{background:#a82339}.claim-btn.claimed{background:#edf3ed;color:#5f8169;cursor:default}.claim-action{display:flex;flex-wrap:wrap;align-items:center;gap:10px}.filters{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px}.filter{background:white;color:#846b77;border:1px solid #eedfe2;border-radius:100px;padding:8px 13px;font-size:11px;font-weight:800}.filter.active{background:#b92f49;border-color:#b92f49;color:white}.footer{padding-top:45px;text-align:center;font-size:11px;color:#a28a97}.empty{border:1px dashed #ead0d7;border-radius:17px;background:#fff9f8;padding:25px;text-align:center;color:#917981;grid-column:1/-1;font-size:12px}
+    dialog{border:0;padding:0;border-radius:21px;max-width:390px;width:calc(100% - 40px);box-shadow:0 25px 90px #3f1c2f48;color:var(--ink)}dialog::backdrop{background:#251d24a8}.modal{padding:25px}.modal h2{font:700 26px Fraunces,Georgia,serif;margin:2px 0 8px}.modal p{color:var(--muted);font-size:13px;line-height:1.6}.modal label{font-size:12px;font-weight:800;display:block;margin:15px 0 7px}.modal input{width:100%;border:1px solid #ead3da;border-radius:12px;padding:12px 13px}.modal-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:20px}.modal-actions button{border-radius:100px;padding:11px 15px;border:1px solid #ead6dc;font-size:12px;font-weight:800;background:white;color:#9a4c5e}.modal-actions button[type=submit]{background:#c32c48;color:white;border-color:#c32c48}.feedback{padding:12px 16px;border-radius:12px;background:#f6f9f5;color:#406f53;margin:17px 0 0;font-size:12px;font-weight:700}.hidden{display:none!important}
+    @media(max-width:800px){.hero{padding:33px 30px}.hero-art{flex-basis:120px;transform:scale(.75);transform-origin:center right}}@media(max-width:650px){.shell{padding:0 17px 38px}.top{height:76px}.top-note{font-size:9px;letter-spacing:1px}.hero{min-height:223px;padding:27px 24px}.hero-art{display:none}.section{margin-top:31px}.section h2{font-size:24px}.info-grid,.ideas-grid{grid-template-columns:1fr}.idea-card{padding:12px}.mini-gift{width:59px;height:61px}.info-card{padding:18px}.hero h1{font-size:36px}}
+  </style>
+</head>
+<body>
+ <div class="shell">
+  <header class="top"><div class="brand"><span class="brand-icon" aria-hidden="true"></span> Santa HQ</div><div class="top-note">A wish list for our favorite people</div></header>
+  <main>
+   <section class="hero"><div class="hero-copy"><div class="eyebrow">FROM OUR NORTH POLE TO YOURS</div><h1>A little Christmas <em>magic.</em></h1><p>Here are a few things the girls are dreaming about. Find ideas, see what's already covered, and claim something if you'd like to help make their Christmas special.</p></div><div class="hero-art" aria-hidden="true"><div class="big-gift"></div><div class="bow"></div><div class="sparkle"></div><div class="sparkle two"></div></div></section>
+   <div class="notice"><span class="dot"></span><span id="status">Loading your family's list…</span></div>
+   <div id="listContent" class="hidden">
+    <section class="section"><div class="section-head"><div><div class="kicker">ALREADY COVERED</div><h2>What's in Santa's bag</h2><p class="subtitle">Just a quick peek to help avoid duplicates.</p></div></div><div class="info-grid" id="bagGrid"></div></section>
+    <section class="section"><div class="section-head"><div><div class="kicker">THE LITTLE DETAILS</div><h2>Things they're loving lately</h2><p class="subtitle">A little inspiration beyond the specific wish list.</p></div></div><div class="info-grid" id="likesGrid"></div></section>
+    <section class="section" id="ideasSection"><div class="section-head"><div><div class="kicker">GIFT IDEAS</div><h2>Ideas waiting for an elf</h2><p class="subtitle">See something you plan to buy? Claim it so no one else duplicates it.</p></div><span class="count" id="availableCount">0 available</span></div><div class="filters" id="filters"></div><div class="ideas-grid" id="ideasGrid"></div></section>
+   </div>
+  </main>
+  <footer class="footer">Made with love, for the grown-ups. Thank you for helping make Christmas merry.</footer>
+ </div>
+ <dialog id="claimDialog"><form method="dialog" id="claimForm" class="modal"><div class="eyebrow">A LITTLE HOLIDAY HELP</div><h2>Claim this gift</h2><p id="claimText"></p><label for="claimName">Your name</label><input id="claimName" maxlength="48" minlength="2" required autocomplete="name" placeholder="First name or family name"><div class="modal-actions"><button type="button" id="cancelClaim">Cancel</button><button type="submit" id="confirmClaim">I'll get this</button></div></form></dialog>
+ <script type="module">
+  const status=document.getElementById('status'),shell=document.getElementById('listContent');
+  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const safeLink=s=>{try{const u=new URL(s);return ['https:','http:'].includes(u.protocol)?u.href:'';}catch{return '';}};
+  const state={items:[],activeFilter:'all',preview:false,names:{'1':'Child one','2':'Child two'},interests1:'',interests2:'',pending:'',loaded:false,claims:[],api:'',listId:''};
+  function getStatus(msg,good=false){status.innerHTML=good?'<strong>Family list ready.</strong> '+esc(msg):esc(msg);}
+  function listName(k){return k==='1'?state.names['1']:k==='2'?state.names['2']:k==='both'?'Both girls':'Either girl';}
+  function groupMatch(k){return k==='both'||k==='unassigned'||k===state.activeFilter;}
+  function splitLikes(s){return String(s||'').split(/[,\n;]+/).map(v=>v.trim()).filter(Boolean).slice(0,20);}
+  function cardFor(k,kind){
+    const matches=kind==='bag'?state.items.filter(x=>x.kind==='bag'&&(x.kid===k||x.kid==='both'||x.kid==='unassigned')):splitLikes(k==='1'?state.interests1:state.interests2);
+    return `<article class="info-card"><h3>${esc(state.names[k])}</h3>${kind==='bag'?
+      (matches.length?matches.map(g=>`<div class="bag-item"><span class="bag-check" aria-hidden="true"></span><span>${esc(g.name)}</span></div>`).join(''):'<div class="no-items">Nothing listed here yet.</div>'):
+      (matches.length?`<div class="likes">${matches.map(x=>`<span class="like">${esc(x)}</span>`).join('')}</div>`:'<div class="no-items">Favorite things will show up here soon.</div>')}</article>`;
+  }
+  function draw(){
+    if(!state.loaded)return;
+    shell.classList.remove('hidden');
+    document.getElementById('bagGrid').innerHTML=['1','2'].map(k=>cardFor(k,'bag')).join('');
+    document.getElementById('likesGrid').innerHTML=['1','2'].map(k=>cardFor(k,'likes')).join('');
+    const filters=[{id:'all',label:'Everyone'},{id:'1',label:state.names['1']},{id:'2',label:state.names['2']}];
+    document.getElementById('filters').innerHTML=filters.map(f=>`<button type="button" class="filter ${state.activeFilter===f.id?'active':''}" data-filter="${f.id}">${esc(f.label)}</button>`).join('');
+    const ideas=state.items.filter(g=>g.kind==='idea'&&(state.activeFilter==='all'||groupMatch(g.kid)));
+    document.getElementById('availableCount').textContent=state.items.filter(g=>g.kind==='idea'&&!g.claimed).length+' available';
+    document.getElementById('ideasGrid').innerHTML=ideas.length?ideas.map(g=>{
+      const link=safeLink(g.link),image=safeLink(g.image);
+      return `<article class="idea-card"><div class="mini-gift">${image?`<img src="${esc(image)}" alt="" loading="lazy" onerror="this.replaceWith(document.createElement('span'))">`:'<div class="gift-symbol" aria-hidden="true"></div>'}</div><div class="idea-main"><strong>${esc(g.name)}</strong><small>${esc(listName(g.kid))}${g.category?' · '+esc(g.category):''}</small><div class="claim-action">${g.claimed?'<button type="button" class="claim-btn claimed" disabled>Claimed</button>':`<button type="button" class="claim-btn" data-claim="${esc(g.id)}">I’ll get this</button>`}${link?`<a target="_blank" rel="noopener noreferrer" href="${esc(link)}">View idea</a>`:''}</div></div></article>`;
+    }).join(''):'<div class="empty">No gift ideas have been shared in this section yet.</div>';
+  }
+  document.addEventListener('click',e=>{
+    const filter=e.target.closest('[data-filter]');if(filter){state.activeFilter=filter.dataset.filter;draw();}
+    const claim=e.target.closest('[data-claim]');if(claim){
+      const g=state.items.find(x=>x.id===claim.dataset.claim);
+      if(!g||g.claimed)return;
+      state.pending=g.id;
+      document.getElementById('claimText').textContent=`You’re planning to get “${g.name}” for ${listName(g.kid)}. Claiming tells everyone this idea is taken.`;
+      document.getElementById('claimDialog').showModal();document.getElementById('claimName').focus();
+    }
+  });
+  document.getElementById('cancelClaim').onclick=()=>document.getElementById('claimDialog').close();
+  async function load(initial=false){
+    if(state.preview)return;
+    try{
+      const r=await fetch(`${state.api}/api/list/${encodeURIComponent(state.listId)}`,{cache:'no-store'});
+      const data=await r.json();if(!r.ok)throw Error(data.error||'Family list unavailable.');
+      state.names={'1':data.child1||'Child one','2':data.child2||'Child two'};
+      state.interests1=data.interests1||'';state.interests2=data.interests2||'';
+      state.items=Array.isArray(data.items)?data.items:[];
+      state.loaded=true;draw();
+      if(initial)getStatus('Claims update for everyone automatically.',true);
+    }catch(e){if(initial){shell.classList.add('hidden');getStatus(e.message||'This family list could not be opened.');}else getStatus('Can’t refresh right now. Check your connection before claiming a gift.');}
+  }
+  document.getElementById('claimForm').addEventListener('submit',async e=>{
+    e.preventDefault();const name=document.getElementById('claimName').value.trim().slice(0,48);
+    if(name.length<2||!state.pending||!state.loaded)return;
+    const btn=document.getElementById('confirmClaim');btn.disabled=true;btn.textContent='Claiming…';
+    try{
+      if(state.preview){const g=state.items.find(x=>x.id===state.pending);if(g)g.claimed=true;draw();}
+      else{
+        const r=await fetch(`${state.api}/api/list/${encodeURIComponent(state.listId)}/claim`,{
+          method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id:state.pending,name})
+        });
+        const result=await r.json();if(!r.ok)throw Error(result.error||'Unable to claim this gift.');
+        await load();
+      }
+      document.getElementById('claimDialog').close();document.getElementById('claimName').value='';
+      getStatus('Your gift is reserved. Thank you for helping!',true);
+    }catch(err){await load();getStatus(err.message||'That gift may have been claimed already. Please try another.');}
+    finally{btn.disabled=false;btn.textContent='I’ll get this';state.pending='';}
+  });
+  function preview(){
+    state.preview=true;state.names={'1':'Child one','2':'Child two'};
+    state.interests1='Rainbows, science, art projects, picture books, imaginative play';
+    state.interests2='Animals, building, music, dolls, bright colors';
+    state.items=[{id:'a',kind:'bag',kid:'1',name:'A cozy winter outfit'},
+      {id:'b',kind:'bag',kid:'2',name:'A favorite storybook'},
+      {id:'c',kind:'idea',kid:'1',name:'Magnetic building tiles',category:'Toys'},
+      {id:'d',kind:'idea',kid:'2',name:'Animal play set',category:'Pretend play'},
+      {id:'e',kind:'idea',kid:'both',name:'Family game night set',category:'Games'}];
+    state.loaded=true;draw();getStatus('Sample preview — claims are not saved.',true);
+  }
+  const params=new URLSearchParams(location.hash.slice(1));
+  if(new URLSearchParams(location.search).get('preview')==='1')preview();
+  else{
+    state.listId=params.get('list')||'';
+    try{const u=new URL(params.get('api')||'');
+      if(u.protocol==='https:'&&u.hostname.endsWith('.workers.dev'))state.api=u.origin;
+    }catch{}
+    if(!/^[0-9a-f-]{36}$/.test(state.listId)||!state.api)getStatus('Ask the family for their full private-sharing link.');
+    else{
+      load(true);
+      setInterval(()=>{if(!document.hidden)load();},20000);
+      document.addEventListener('visibilitychange',()=>{if(!document.hidden)load();});
+    }
+  }
+ </script>
+</body>
+</html>
