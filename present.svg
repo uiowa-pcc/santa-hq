@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" fill="none" role="img">
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6A3944" flood-opacity=".12"/></filter></defs>
+
+<ellipse cx="124" cy="215" rx="79" ry="11" fill="#604D57" opacity=".09"/>
+<g filter="url(#shadow)"><rect x="52" y="91" width="137" height="114" rx="11" fill="#C64759" stroke="#593B45" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/><rect x="49" y="79" width="144" height="36" rx="9" fill="#F3A4A8" stroke="#593B45" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M113 80h28v125h-28z" fill="#F3BE67" stroke="#593B45" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M114 80h26v35h-26z" fill="#FFE0A0"/><path d="M126 80C90 77 76 61 91 49c14-11 29 13 35 31Zm0 0c6-24 22-43 36-31 15 15-6 29-36 31Z" fill="#F6BBC2" stroke="#593B45" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/><path d="M127 80c-5-8-11-14-18-17m17 17c6-10 13-14 18-16" stroke="white" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+<circle cx="127" cy="80" r="8" fill="#F3BE67" stroke="#593B45" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M64 136h32M64 148h20" stroke="#F9D9D9" stroke-width="4" opacity=".65" stroke-linecap="round"/>
+</g><path d="M34 65.0 Q35.6 71.4 42.0 73 Q35.6 74.6 34 81.0 Q32.4 74.6 26.0 73 Q32.4 71.4 34 65.0Z" fill="#F3BE67"/><path d="M203 117.0 Q204.4 122.6 210.0 124 Q204.4 125.4 203 131.0 Q201.6 125.4 196.0 124 Q201.6 122.6 203 117.0Z" fill="#F3A4A8"/></svg>

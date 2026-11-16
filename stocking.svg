@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" fill="none" role="img">
+<defs><filter id="shadow" x="-25%" y="-25%" width="150%" height="165%"><feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6A3944" flood-opacity=".12"/></filter></defs>
+
+<ellipse cx="124" cy="217" rx="81" ry="10" fill="#604D57" opacity=".08"/>
+<g filter="url(#shadow)"><path d="M104 46h71v102c0 30-20 52-52 55-15 2-32-3-44-13l-27-25c-11-10-13-23-3-34 10-11 23-10 35-2l20 16V46Z" fill="#C64759" stroke="#593B45" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M104 121h70v24c0 8-3 15-9 20l-61-33Z" fill="#DA6270" opacity=".5"/>
+<path d="M50 157c-9-10-8-22 2-29 10-9 21-6 32 3l25 20c6 6 16 11 30 11v31c-17 12-40 10-60-4Z" fill="#F6BBC2" stroke="#593B45" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="93" y="40" width="91" height="37" rx="17" fill="#FFF7F1" stroke="#593B45" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M155 44c8-28 34-18 23 5" stroke="#27755E" stroke-width="9" stroke-linecap="round"/><path d="m132 99 8 11 13-4-8 12 8 10-13-3-8 12-2-15-14-6 14-4Z" fill="#F3BE67"/>
+</g><path d="M193 113.0 Q194.6 119.4 201.0 121 Q194.6 122.6 193 129.0 Q191.4 122.6 185.0 121 Q191.4 119.4 193 113.0Z" fill="#F3BE67"/></svg>
