@@ -1,0 +1,5 @@
+const CACHE='santa-hq-v10-traditions';
+const ASSETS=['./','./index.html','./family.html','./family-hq.js','./cloud-sync.js','./manifest.webmanifest','./icon-192.png','./icon-512.png','./art/crayons.svg','./art/elf.svg','./art/letter.svg','./art/mailbox.svg','./art/microphone.svg','./art/ornament.svg','./art/present.svg','./art/santa-full.svg','./art/santa-peek.svg','./art/stocking.svg','./art/tree.svg'];
+self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)));self.skipWaiting()});
+self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))));self.clients.claim()});
+self.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==self.location.origin)return;e.respondWith(fetch(e.request).then(r=>{if(r.ok&&!u.search){const copy=r.clone();caches.open(CACHE).then(c=>c.put(e.request,copy))}return r}).catch(()=>caches.match(e.request,{ignoreSearch:true}).then(r=>r||caches.match('./index.html'))))});
